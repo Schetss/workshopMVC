@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="LeaderboardModel">
+  <DataContextMoniker Name="/LeaderboardModelDataContext" />
+  <nestedChildShapes>
+    <classShape Id="6e68e18c-e296-4457-9f1f-c7b754b6c9aa" absoluteBounds="0.75, 4.125, 2, 1.1939925130208344">
+      <DataClassMoniker Name="/LeaderboardModelDataContext/User" />
+      <nestedChildShapes>
+        <elementListCompartment Id="228012b0-cb1c-470d-884e-3d0c50bc0e13" absoluteBounds="0.765, 4.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="ffd68fd9-85a2-4fdd-b12b-e0a67f54278c" absoluteBounds="0.75, 1.125, 2, 1.1939925130208338">
+      <DataClassMoniker Name="/LeaderboardModelDataContext/Skill" />
+      <nestedChildShapes>
+        <elementListCompartment Id="12e750c6-d652-4adf-8b8e-53b80a72b3f8" absoluteBounds="0.765, 1.585, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="44dcd189-c0fb-4c79-adac-2da5cd9fb764" absoluteBounds="3.5, 0.875, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/LeaderboardModelDataContext/SkillsPerUser" />
+      <nestedChildShapes>
+        <elementListCompartment Id="3e98c855-4262-4509-a182-4a395306ef27" absoluteBounds="3.515, 1.335, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(2.75 : 1.72199625651042); (3.5 : 1.72199625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LeaderboardModelDataContext/Skill/MVCSkill_MVCSkillsPerUser" />
+      <nodes>
+        <classShapeMoniker Id="ffd68fd9-85a2-4fdd-b12b-e0a67f54278c" />
+        <classShapeMoniker Id="44dcd189-c0fb-4c79-adac-2da5cd9fb764" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 4.72199625651042); (4.5 : 4.72199625651042); (4.5 : 2.45359537760417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/LeaderboardModelDataContext/User/MVCUser_MVCSkillsPerUser" />
+      <nodes>
+        <classShapeMoniker Id="6e68e18c-e296-4457-9f1f-c7b754b6c9aa" />
+        <classShapeMoniker Id="44dcd189-c0fb-4c79-adac-2da5cd9fb764" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Grant";
+}
+
+<h2>Grant</h2>
+
+<form action="" method="post">
+
+    <label for="user">Select a user</label>
+    <select id="user" name="user">
+        @foreach(var u in ViewBag.users) 
+        {
+               <option value="@u.id">@u.name</option>
+        }
+    </select>
+
+     <label for="skill">Select a skill</label>
+    <select id="skill" name="user">
+        @foreach(var s in ViewBag.skills) 
+        {
+               <option value="@s.id">@s.name</option>
+        }
+    </select>
+
+</form>
